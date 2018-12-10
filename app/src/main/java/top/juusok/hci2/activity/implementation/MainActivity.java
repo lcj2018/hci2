@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Switch;
 
+import top.juusok.hci2.Global;
 import top.juusok.hci2.R;
 import top.juusok.hci2.activity.CloseControllerListener;
 import top.juusok.hci2.activity.StarControllerListener;
@@ -29,6 +30,12 @@ public class MainActivity extends AppCompatActivity implements SwitchControllerL
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        if(Global.theme == 1)
+            setTheme(R.style.BasicTheme_Boy);
+        else
+            setTheme(R.style.BasicTheme_Girl);
+
         setContentView(R.layout.activity_main);
 
         SwitchController switchController = new SwitchController((SwitchView)this.findViewById(R.id.headIcon),this);
@@ -75,6 +82,10 @@ public class MainActivity extends AppCompatActivity implements SwitchControllerL
         params.height = WindowManager.LayoutParams.WRAP_CONTENT;
         //将设置好的属性set回去
         win.setAttributes(params);
+    }
+
+    public void refresh(){
+        recreate();
     }
 
 
