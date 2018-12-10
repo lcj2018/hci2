@@ -68,7 +68,7 @@
 
 
 
-    <Button
+    <top.juusok.hci2.view.NextView
         android:id="@+id/btnnext"
         android:layout_width="25dp"
         android:layout_height="30dp"

@@ -26,9 +26,6 @@
         <activity
             android:screenOrientation="portrait"
             android:name=".activity.implementation.starDialog" />
-        <activity
-            android:screenOrientation="portrait"
-            android:name=".activity.implementation.nextDialog" />
 
     </application>
 

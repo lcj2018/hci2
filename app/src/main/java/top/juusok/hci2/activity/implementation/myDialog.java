@@ -21,7 +21,7 @@ import top.juusok.hci2.view.CloseView;
 
 public class myDialog extends Dialog implements CloseControllerListener {
 
-    private Button b1,b2;
+    private Button b2;
     private Context mcontext;
 
     public myDialog(Context context) {

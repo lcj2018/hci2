@@ -55,7 +55,6 @@ public class MainActivity extends AppCompatActivity implements SwitchControllerL
     {
         starDialog dialog = new starDialog(this);
 
-        dialog.setContentView(R.layout.activity_star);
         dialog.show();
         Window win = dialog.getWindow();
         win.setGravity(Gravity.CENTER);
