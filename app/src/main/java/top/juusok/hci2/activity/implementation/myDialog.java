@@ -20,45 +20,22 @@ import top.juusok.hci2.view.CloseView;
 
 public class myDialog extends Dialog implements CloseControllerListener {
 
-    private Button b1;
-
-
     public myDialog(Context context) {
         super(context, R.style.dialog);
         setContentView(R.layout.activity_switch);
-
-        //CloseController closeController = new CloseController((CloseView)this.findViewById(R.id.closeIcon),this);
-        //((CloseView) this.findViewById(R.id.closeIcon)).setListeners(closeController);
     }
 
     @Override
     public void onCloseSelect()
     {
-
         this.dismiss();
     }
 
     @Override
     public void show() {
-        b1  = (Button) this.findViewById(R.id.closeIcon);
-        b1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onCloseSelect();
-            }
-        });
+        CloseController closeController = new CloseController((CloseView)this.findViewById(R.id.closeIcon),this);
+        ((CloseView) this.findViewById(R.id.closeIcon)).setListeners(closeController);
 
         super.show();
-     /*   *//**
-         * 设置宽度全屏，要设置在show的后面
-         *//*
-        WindowManager.LayoutParams layoutParams = getWindow().getAttributes();
-        layoutParams.gravity = Gravity.BOTTOM;
-        layoutParams.width = ViewGroup.LayoutParams.MATCH_PARENT;
-        layoutParams.height = ViewGroup.LayoutParams.WRAP_CONTENT;
-
-        getWindow().getDecorView().setPadding(0, 0, 0, 0);
-
-        getWindow().setAttributes(layoutParams);*/
     }
 }
