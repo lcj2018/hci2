@@ -61,8 +61,6 @@ public class MainActivity extends AppCompatActivity implements SwitchControllerL
     @Override
     public void onSwitchSelect()
     {
-//        Intent intent = new Intent(this,SwitchActivity.class);
-//        this.startActivity(intent);
         myDialog dialog = new myDialog(this);
 
         dialog.setContentView(R.layout.activity_switch);
