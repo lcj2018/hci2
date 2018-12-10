@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 控制标题栏背景色 format:颜色值、资源引用 -->
+    <attr name="title_bg" format="color|reference" />
+    <!-- 控制礼拜字体颜色 format:颜色值、资源引用 -->
+    <attr name="week_color" format="color|reference" />
+    <!-- 控制week1背景色 format:颜色值、资源引用 -->
+    <attr name="week1" format="color|reference" />
+    <!-- 控制week2背景色 format:颜色值、资源引用 -->
+    <attr name="week2" format="color|reference" />
+    <!-- 控制week3背景色 format:颜色值、资源引用 -->
+    <attr name="week3" format="color|reference" />
+    <!-- 控制tail头部背景色 format:颜色值、资源引用 -->
+    <attr name="tail1" format="color|reference" />
+    <!-- 控制tail尾部背景色 format:颜色值、资源引用 -->
+    <attr name="tail2" format="color|reference" />
+    <!-- 控制弹出框 头部背景色 format:颜色值、资源引用 -->
+    <attr name="dialog1" format="color|reference" />
+    <!-- 控制弹出框 尾部背景色 format:颜色值、资源引用 -->
+    <attr name="dialog2" format="color|reference" />
+    <!-- 控制当前用户图片 format:颜色值、资源引用 -->
+    <attr name="currentUser" format="reference" />
+    <!-- 控制切换用户图片 format:颜色值、资源引用 -->
+    <attr name="otherUser" format="reference" />
+    <!-- 控制home图片 format:颜色值、资源引用 -->
+    <attr name="home_pic" format="reference" />
+    <!-- 控制tail图片 format:颜色值、资源引用 -->
+    <attr name="tail_pic" format="reference" />
+    <!-- 控制head图片 format:颜色值、资源引用 -->
+    <attr name="head_pic" format="reference" />
+
+</resources>

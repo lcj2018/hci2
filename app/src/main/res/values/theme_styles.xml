@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BasicTheme" parent="Theme.AppCompat.Light.DarkActionBar" >
+        <!-- 隐藏Activity窗口的ActionBar -->
+        <item name="windowActionBar">false</item>
+        <!-- 隐藏Activity窗口的Title标题栏 -->
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+    <style name="BasicTheme.Boy" >
+
+        <item name="title_bg">#8BD4F4</item>
+
+        <item name="week_color">#96D8F5</item>
+
+        <item name="week1">#56E1B8</item>
+
+        <item name="week2">#6BD3F7</item>
+
+        <item name="week3">#47B6DB</item>
+
+        <item name="tail1">#47B6DB</item>
+
+        <item name="tail2">#88D0EF</item>
+
+        <item name="dialog1">#8ED5F3</item>
+
+        <item name="dialog2">#4FACDF</item>
+
+        <item name='currentUser'>@drawable/boyh </item>>
+
+        <item name='otherUser'>@drawable/girlh </item>>
+
+        <item name='home_pic'>@drawable/home </item>>
+
+        <item name='tail_pic'>@drawable/boygoal </item>>
+
+        <item name='head_pic'>@drawable/boysmile </item>>
+    </style>
+
+    <style name="BasicTheme.Girl" >
+
+        <item name="title_bg">#F8BCDA</item>
+
+        <item name="week_color">#F9C4DF</item>
+
+        <item name="week1">#FFEFFE</item>
+
+        <item name="week2">#FCDBEB</item>
+
+        <item name="week3">#FEC3C5</item>
+
+        <item name="tail1">#F480AB</item>
+
+        <item name="tail2">#F8BCDA</item>
+
+        <item name="dialog1">#F8BCDA</item>
+
+        <item name="dialog2">#F480AB</item>
+
+        <item name='currentUser'>@drawable/girlh </item>>
+
+        <item name='otherUser'>@drawable/boyh </item>>
+
+        <item name='home_pic'>@drawable/homebutton_girl </item>>
+
+        <item name='tail_pic'>@drawable/girlgoal </item>>
+
+        <item name='head_pic'>@drawable/girlsmile </item>>
+    </style>
+</resources>

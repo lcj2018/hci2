@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.implementation.myDialog">
+
+    <ImageView
+        android:id="@+id/dialog2"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog1"
+        android:src="?attr/dialog2" />
+
+    <ImageView
+        android:id="@+id/dialog1"
+        android:layout_width="match_parent"
+        android:layout_height="198dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_weight="1"
+        android:src="?attr/dialog1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/currentuser"
+        android:layout_width="59dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/currentUser" />
+
+    <ImageView
+        android:id="@+id/coin"
+        android:layout_width="20dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coin1_number"
+        app:srcCompat="@drawable/starcoin" />
+
+    <ImageView
+        android:id="@+id/star_total"
+        android:layout_width="20dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/coin1_number"
+        app:srcCompat="@drawable/star" />
+
+    <TextView
+        android:id="@+id/user1_name"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:text="宝宝_boy"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="@+id/dialog1"
+        app:layout_constraintTop_toBottomOf="@+id/currentuser" />
+
+
+    <TextView
+        android:id="@+id/star_yesterday"
+        android:layout_width="64dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="20dp"
+        android:text="昨日得星"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/dialog1"
+        app:layout_constraintEnd_toStartOf="@+id/star_today" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="29dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:text="7"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/star_yesterday"
+        app:layout_constraintEnd_toStartOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="29dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:text="5"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/star_today"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/star_today"
+        android:layout_width="64dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="20dp"
+        android:text="今日得星"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/dialog1"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="8dp"
+        android:text="10"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toEndOf="@+id/coin"
+        app:layout_constraintTop_toBottomOf="@+id/coin1_number" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="8dp"
+        android:text="9"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toEndOf="@+id/star_total"
+        app:layout_constraintTop_toBottomOf="@+id/coin1_number" />
+
+    <TextView
+        android:id="@+id/coin1_number"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp"
+        android:text="上次同步 11月2日 15:00"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user1_name" />
+
+    <Button
+        android:id="@+id/closeIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/close"
+        app:layout_constraintEnd_toEndOf="@+id/dialog1"
+        app:layout_constraintTop_toTopOf="@+id/dialog1" />
+
+    <Button
+        android:id="@+id/user2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:background="?attr/otherUser"
+        app:layout_constraintStart_toStartOf="@+id/dialog2"
+        app:layout_constraintTop_toBottomOf="@+id/dialog1"
+        app:srcCompat="?attr/otherUser" />
+
+    <TextView
+        android:id="@+id/user2_name"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:text="宝宝_girl"
+        android:textColor="@android:color/white"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="@+id/dialog2"
+        app:layout_constraintTop_toBottomOf="@+id/user2" />
+
+
+</android.support.constraint.ConstraintLayout>

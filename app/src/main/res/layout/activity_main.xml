@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.implementation.MainActivity">
+
+    <ImageView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="?attr/title_bg" />
+
+    <ImageView
+        android:id="@+id/tail1"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="?attr/tail1" />
+
+    <ImageView
+        android:id="@+id/tail2"
+        android:layout_width="match_parent"
+        android:layout_height="89dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="?attr/tail2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="187dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="2018年11月1号 - 11月21号"
+        android:textColor="@android:color/background_light"
+        app:fontFamily="sans-serif"
+        app:layout_constraintBottom_toTopOf="@+id/tail2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tail1" />
+
+    <TextView
+        android:id="@+id/sunday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:text="周日"
+        android:textColor="?attr/week_color"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/monday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:text="周一"
+        android:textColor="?attr/week_color"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/sunday"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/tuesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:text="周二"
+        android:textColor="?attr/week_color"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/monday"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/wednesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:text="周三"
+        android:textColor="?attr/week_color"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/tuesday"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/thursday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:text="周四"
+        android:textColor="?attr/week_color"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/wednesday"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/friday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:text="周五"
+        android:textColor="?attr/week_color"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/thursday"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/saturday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:text="周六"
+        android:textColor="?attr/week_color"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/friday"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <ImageView
+        android:id="@+id/day1"
+        android:layout_width="38dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:radius="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sunday"
+        android:src="?attr/week1" />
+
+    <ImageView
+        android:id="@+id/day2"
+        android:layout_width="38dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:radius="16dp"
+        app:layout_constraintStart_toEndOf="@+id/day1"
+        app:layout_constraintTop_toBottomOf="@id/monday"
+        android:src="?attr/week1" />
+
+    <ImageView
+        android:id="@+id/day3"
+        android:layout_width="38dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:radius="16dp"
+        app:layout_constraintStart_toEndOf="@+id/day2"
+        app:layout_constraintTop_toBottomOf="@id/tuesday"
+        android:src="?attr/week1" />
+
+    <ImageView
+        android:id="@+id/day4"
+        android:layout_width="38dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:radius="16dp"
+        app:layout_constraintStart_toEndOf="@+id/day3"
+        app:layout_constraintTop_toBottomOf="@id/wednesday"
+        android:src="?attr/week1" />
+
+    <ImageView
+        android:id="@+id/day5"
+        android:layout_width="38dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:radius="16dp"
+        app:layout_constraintStart_toEndOf="@+id/day4"
+        app:layout_constraintTop_toBottomOf="@id/thursday"
+        android:src="?attr/week1" />
+
+    <ImageView
+        android:id="@+id/day6"
+        android:layout_width="38dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:radius="16dp"
+        app:layout_constraintStart_toEndOf="@+id/day5"
+        app:layout_constraintTop_toBottomOf="@id/friday"
+        android:src="?attr/week1" />
+
+    <ImageView
+        android:id="@+id/day7"
+        android:layout_width="38dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:radius="16dp"
+        app:layout_constraintStart_toEndOf="@+id/day6"
+        app:layout_constraintTop_toBottomOf="@id/saturday"
+        android:src="?attr/week1" />
+
+    <ImageView
+        android:id="@+id/day8"
+        android:layout_width="38dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:radius="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/day1"
+        android:src="?attr/week2" />
+
+    <ImageView
+        android:id="@+id/day9"
+        android:layout_width="38dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:radius="16dp"
+        app:layout_constraintStart_toEndOf="@+id/day8"
+        app:layout_constraintTop_toBottomOf="@+id/day2"
+        android:src="?attr/week2" />
+
+    <ImageView
+        android:id="@+id/day10"
+        android:layout_width="38dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:radius="16dp"
+        app:layout_constraintStart_toEndOf="@+id/day11"
+        app:layout_constraintTop_toBottomOf="@+id/day4"
+        android:src="?attr/week2" />
+
+    <ImageView
+        android:id="@+id/day11"
+        android:layout_width="38dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:radius="16dp"
+        app:layout_constraintStart_toEndOf="@+id/day9"
+        app:layout_constraintTop_toBottomOf="@+id/day3"
+        android:src="?attr/week2" />
+
+    <ImageView
+        android:id="@+id/day12"
+        android:layout_width="38dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:radius="16dp"
+        app:layout_constraintStart_toEndOf="@+id/day10"
+        app:layout_constraintTop_toBottomOf="@+id/day5"
+        android:src="?attr/week2" />
+
+    <ImageView
+        android:id="@+id/day13"
+        android:layout_width="38dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:radius="16dp"
+        app:layout_constraintStart_toEndOf="@+id/day12"
+        app:layout_constraintTop_toBottomOf="@+id/day6"
+        android:src="?attr/week2" />
+
+    <ImageView
+        android:id="@+id/day14"
+        android:layout_width="38dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:radius="16dp"
+        app:layout_constraintStart_toEndOf="@+id/day13"
+        app:layout_constraintTop_toBottomOf="@+id/day7"
+        android:src="?attr/week2" />
+
+    <ImageView
+        android:id="@+id/day15"
+        android:layout_width="38dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:radius="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/day8"
+        android:src="?attr/week3" />
+
+    <ImageView
+        android:id="@+id/day16"
+        android:layout_width="38dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:radius="16dp"
+        app:layout_constraintStart_toEndOf="@+id/day15"
+        app:layout_constraintTop_toBottomOf="@+id/day9"
+        android:src="?attr/week3" />
+
+    <ImageView
+        android:id="@+id/day17"
+        android:layout_width="38dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:radius="16dp"
+        app:layout_constraintStart_toEndOf="@+id/day16"
+        app:layout_constraintTop_toBottomOf="@+id/day11"
+        android:src="?attr/week3" />
+
+    <ImageView
+        android:id="@+id/day18"
+        android:layout_width="38dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:radius="16dp"
+        app:layout_constraintStart_toEndOf="@+id/day17"
+        app:layout_constraintTop_toBottomOf="@+id/day10"
+        android:src="?attr/week3" />
+
+    <ImageView
+        android:id="@+id/day19"
+        android:layout_width="38dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:radius="16dp"
+        app:layout_constraintStart_toEndOf="@+id/day18"
+        app:layout_constraintTop_toBottomOf="@+id/day12"
+        android:src="?attr/week3" />
+
+    <ImageView
+        android:id="@+id/day20"
+        android:layout_width="38dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:radius="16dp"
+        app:layout_constraintStart_toEndOf="@+id/day19"
+        app:layout_constraintTop_toBottomOf="@+id/day13"
+        android:src="?attr/week3" />
+
+    <ImageView
+        android:id="@+id/day21"
+        android:layout_width="38dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:radius="16dp"
+        app:layout_constraintStart_toEndOf="@+id/day20"
+        app:layout_constraintTop_toBottomOf="@+id/day14"
+        android:src="?attr/week3" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="283dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="108dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/title"
+        app:srcCompat="?attr/head_pic" />
+
+    <ImageView
+        android:id="@+id/currentuser"
+        android:layout_width="59dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/home_pic" />
+
+    <TextView
+        android:id="@+id/user1_name"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="84dp"
+        android:text="宝宝_boy"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toEndOf="@+id/headIcon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/coin1"
+        android:layout_width="33dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="84dp"
+        app:layout_constraintStart_toEndOf="@+id/user1_name"
+        app:layout_constraintTop_toTopOf="@+id/title"
+        app:srcCompat="@drawable/modal" />
+
+    <ImageView
+        android:id="@+id/coin2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="84dp"
+        app:layout_constraintStart_toEndOf="@+id/coin1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/starcoin" />
+
+    <TextView
+        android:id="@+id/coin1_number"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="84dp"
+        android:text="10"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toEndOf="@+id/coin1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/coin2_number"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="84dp"
+        android:text="210"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toEndOf="@+id/coin2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/goal"
+        android:layout_width="223dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="@+id/tail2"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="?attr/tail_pic" />
+
+    <top.juusok.hci2.view.SwitchView
+        android:id="@+id/headIcon"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="?attr/currentUser"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentuser" />
+
+    <top.juusok.hci2.view.StarView
+        android:id="@+id/starIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/star"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/day1" />
+
+    <top.juusok.hci2.view.StarView
+        android:id="@+id/starIcon2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/star"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/day2" />
+
+
+</android.support.constraint.ConstraintLayout>
