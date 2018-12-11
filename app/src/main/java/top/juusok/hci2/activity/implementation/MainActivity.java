@@ -55,9 +55,9 @@ public class MainActivity extends AppCompatActivity implements SwitchControllerL
 
 
     @Override
-    public void onStarSelect(int th)
+    public void onStarSelect(int th, String str)
     {
-        starDialog dialog = new starDialog(this,th);
+        starDialog dialog = new starDialog(this, th, str);
 
         dialog.show();
         Window win = dialog.getWindow();

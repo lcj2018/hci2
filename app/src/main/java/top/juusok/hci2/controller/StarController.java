@@ -2,6 +2,8 @@ package top.juusok.hci2.controller;
 
 import android.view.View;
 import android.view.View.OnClickListener;
+
+import top.juusok.hci2.model.User;
 import top.juusok.hci2.view.StarView;
 import top.juusok.hci2.activity.StarControllerListener;
 
@@ -19,6 +21,8 @@ public class StarController implements OnClickListener {
     @Override
     public void onClick(View v)
     {
-        listener.onStarSelect(th);
+        User res = User.getInstance();
+        String str = Integer.toString(res.getDay(2*this.th-1));
+        listener.onStarSelect(th,str);
     }
 }

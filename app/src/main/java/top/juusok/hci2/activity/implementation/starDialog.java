@@ -25,48 +25,39 @@ import top.juusok.hci2.view.StarView;
 public class starDialog extends Dialog implements PreControllerListener, NextControllerListener {
     private int th;
 
-    public starDialog(Context context,int th) {
+    public starDialog(Context context, int th, String str) {
         super(context);
         this.th = th;
 
         setContentView(R.layout.activity_star);
 
-        User res = User.getInstance();
-        int star = res.getDay(th*2-1);
-        String str = Integer.toString(star);
         ((TextView)this.findViewById(R.id.sunstar)).setText(str);
     }
 
-    public void onMoonSelect()
+    public void onMoonSelect(String str)
     {
         setContentView(R.layout.activity_moon);
 
-        User res = User.getInstance();
-        int star = res.getDay(this.th*2);
-        String str = Integer.toString(star);
         ((TextView)this.findViewById(R.id.moonstar)).setText(str);
 
-        PreController preController = new PreController((PreView)this.findViewById(R.id.btnpre),this);
+        PreController preController = new PreController((PreView)this.findViewById(R.id.btnpre),this,th);
         ((PreView) this.findViewById(R.id.btnpre)).setListeners(preController);
     }
     @Override
-    public void onStarSelect()
+    public void onStarSelect(String str)
     {
         setContentView(R.layout.activity_star);
 
-        User res = User.getInstance();
-        int star = res.getDay(this.th*2-1);
-        String str = Integer.toString(star);
         ((TextView)this.findViewById(R.id.sunstar)).setText(str);
 
-        NextController nextController = new NextController((NextView)this.findViewById(R.id.btnnext),this);
+        NextController nextController = new NextController((NextView)this.findViewById(R.id.btnnext),this,th);
         ((NextView) this.findViewById(R.id.btnnext)).setListeners(nextController);
     }
 
     @Override
     public void show() {
 
-        NextController nextController = new NextController((NextView)this.findViewById(R.id.btnnext),this);
+        NextController nextController = new NextController((NextView)this.findViewById(R.id.btnnext),this,this.th);
         ((NextView) this.findViewById(R.id.btnnext)).setListeners(nextController);
 
         getWindow().setBackgroundDrawableResource(android.R.color.transparent);
