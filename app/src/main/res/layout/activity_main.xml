@@ -426,7 +426,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="84dp"
-        android:text="宝宝_boy"
+        android:text="?attr/user1name"
         android:textColor="@android:color/white"
         app:layout_constraintStart_toEndOf="@+id/headIcon"
         app:layout_constraintTop_toTopOf="parent" />
@@ -506,7 +506,9 @@
         android:layout_marginTop="4dp"
         android:background="@drawable/star"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/day1" />
+        app:layout_constraintTop_toTopOf="@+id/day1" >
+
+    </top.juusok.hci2.view.StarView>
 
     <top.juusok.hci2.view.StarView
         android:id="@+id/starIcon2"
@@ -517,7 +519,44 @@
         android:layout_marginTop="4dp"
         android:background="@drawable/star"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/day2" />
+        app:layout_constraintTop_toTopOf="@+id/day2" >
+
+    </top.juusok.hci2.view.StarView>
+
+    <ImageView
+        android:id="@+id/jiayoupic"
+        android:layout_width="207dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginRight="96dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tail2"
+        app:layout_constraintEnd_toEndOf="@+id/tail2"
+        app:srcCompat="?attr/jiayou_pic" />
+
+    <TextView
+        android:id="@+id/day1num"
+        android:layout_width="15dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="12dp"
+        android:layout_weight="1"
+        android:text="?attr/daystar"
+        app:layout_constraintBottom_toBottomOf="@+id/starIcon"
+        app:layout_constraintStart_toStartOf="@+id/starIcon" />
+
+    <TextView
+        android:id="@+id/day2num"
+        android:layout_width="15dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="12dp"
+        android:layout_weight="1"
+        android:text="?attr/daystar"
+        app:layout_constraintBottom_toBottomOf="@+id/starIcon2"
+        app:layout_constraintStart_toStartOf="@+id/starIcon2" />
 
 
 </android.support.constraint.ConstraintLayout>

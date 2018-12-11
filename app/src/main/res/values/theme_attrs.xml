@@ -28,5 +28,12 @@
     <attr name="tail_pic" format="reference" />
     <!-- 控制head图片 format:颜色值、资源引用 -->
     <attr name="head_pic" format="reference" />
+    <!-- 控制鼓励图片 format:颜色值、资源引用 -->
+    <attr name="jiayou_pic" format="reference" />
 
+    <attr name="user1name" format="string|reference" />
+    <attr name="user2name" format="string|reference" />
+    <attr name="daystar" format="string|reference" />
+    <attr name="sunstar" format="string|reference" />
+    <attr name="moonstar" format="string|reference" />
 </resources>

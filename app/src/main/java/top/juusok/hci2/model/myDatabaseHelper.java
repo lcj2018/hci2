@@ -25,79 +25,43 @@ public class myDatabaseHelper extends SQLiteOpenHelper {
         mContext = context;
     }
 
-    public void initData() {
+    public void insertUser(int id, String name, int coins, int stars, int sex)
+    {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
 
-        values.put("id",1);
-        values.put("name","boy");
-        values.put("coins",10);
-        values.put("stars",12);
-        values.put("sex",1);
+        values.put("id",id);
+        values.put("name", name);
+        values.put("coins", coins);
+        values.put("stars", stars);
+        values.put("sex", sex);
         db.insert("users",null,values);
+    }
 
-        values.clear();
-        values.put("id",1);
-        values.put("date",1);
-        values.put("time",1);
-        values.put("cnt",3);
-        db.insert("calendar",null,values);
+    public void insertDay(int id, int date, int time, int cnt)
+    {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
 
-        values.clear();
-        values.put("id",1);
-        values.put("date",1);
-        values.put("time",2);
-        values.put("cnt",4);
+        values.put("id",id);
+        values.put("date",date);
+        values.put("time",time);
+        values.put("cnt",cnt);
         db.insert("calendar",null,values);
+    }
 
-        values.clear();
-        values.put("id",1);
-        values.put("date",2);
-        values.put("time",1);
-        values.put("cnt",2);
-        db.insert("calendar",null,values);
-
-        values.clear();
-        values.put("id",1);
-        values.put("date",2);
-        values.put("time",2);
-        values.put("cnt",3);
-        db.insert("calendar",null,values);
+    public void initData() {
+        insertUser(1,"boy",10,12,1);
+        insertDay(1,1,1,3);
+        insertDay(1,1,2,4);
+        insertDay(1,2,1,2);
+        insertDay(1,2,2,3);
         ////////////////////////////////////////////////////////////////////for boy
-        values.put("id",2);
-        values.put("name","girl");
-        values.put("coins",3);
-        values.put("stars",9);
-        values.put("sex",2);
-        db.insert("users",null,values);
-
-        values.clear();
-        values.put("id",2);
-        values.put("date",1);
-        values.put("time",1);
-        values.put("cnt",1);
-        db.insert("calendar",null,values);
-
-        values.clear();
-        values.put("id",1);
-        values.put("date",1);
-        values.put("time",2);
-        values.put("cnt",2);
-        db.insert("calendar",null,values);
-
-        values.clear();
-        values.put("id",2);
-        values.put("date",2);
-        values.put("time",1);
-        values.put("cnt",3);
-        db.insert("calendar",null,values);
-
-        values.clear();
-        values.put("id",2);
-        values.put("date",2);
-        values.put("time",2);
-        values.put("cnt",3);
-        db.insert("calendar",null,values);
+        insertUser(2,"girl",3,9,2);
+        insertDay(2,1,1,1);
+        insertDay(1,1,2,2);
+        insertDay(2,2,1,3);
+        insertDay(2,2,2,3);
         //for girl
     }
 

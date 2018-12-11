@@ -21,6 +21,7 @@ import top.juusok.hci2.activity.SwitchControllerListener;
 import top.juusok.hci2.controller.SwitchController;
 import top.juusok.hci2.controller.CloseController;
 import top.juusok.hci2.controller.StarController;
+import top.juusok.hci2.model.User;
 import top.juusok.hci2.view.SwitchView;
 import top.juusok.hci2.view.CloseView;
 import top.juusok.hci2.view.StarView;
@@ -30,6 +31,9 @@ public class MainActivity extends AppCompatActivity implements SwitchControllerL
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        User res = User.getInstance();
+        res.setInstance(3-res.getId());
 
         if(Global.theme == 1)
             setTheme(R.style.BasicTheme_Boy);
@@ -41,19 +45,19 @@ public class MainActivity extends AppCompatActivity implements SwitchControllerL
         SwitchController switchController = new SwitchController((SwitchView)this.findViewById(R.id.headIcon),this);
         ((SwitchView) this.findViewById(R.id.headIcon)).setListeners(switchController);
 
-       StarController starController = new StarController((StarView)this.findViewById(R.id.starIcon),this);
+       StarController starController = new StarController((StarView)this.findViewById(R.id.starIcon),this,1);
         ((StarView) this.findViewById(R.id.starIcon)).setListeners(starController);
 
-        StarController starController2 = new StarController((StarView)this.findViewById(R.id.starIcon2),this);
+        StarController starController2 = new StarController((StarView)this.findViewById(R.id.starIcon2),this,2);
         ((StarView) this.findViewById(R.id.starIcon2)).setListeners2(starController2);
 
     }
 
 
     @Override
-    public void onStarSelect()
+    public void onStarSelect(int th)
     {
-        starDialog dialog = new starDialog(this);
+        starDialog dialog = new starDialog(this,th);
 
         dialog.show();
         Window win = dialog.getWindow();

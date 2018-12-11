@@ -17,6 +17,7 @@ import top.juusok.hci2.Global;
 import top.juusok.hci2.R;
 import top.juusok.hci2.activity.CloseControllerListener;
 import top.juusok.hci2.controller.CloseController;
+import top.juusok.hci2.model.User;
 import top.juusok.hci2.view.CloseView;
 
 public class myDialog extends Dialog implements CloseControllerListener {

@@ -37,6 +37,18 @@
         <item name='tail_pic'>@drawable/boygoal </item>>
 
         <item name='head_pic'>@drawable/boysmile </item>>
+
+        <item name='jiayou_pic'>@drawable/jiayou1</item>
+
+        <item name="user1name">"baby_boy"</item>>
+
+        <item name="user2name">"baby_girl"</item>>
+
+        <item name="daystar">"7"</item>>
+
+        <item name="sunstar">"0"</item>>
+
+        <item name="moonstar">"0"</item>>
     </style>
 
     <style name="BasicTheme.Girl" >
@@ -68,5 +80,17 @@
         <item name='tail_pic'>@drawable/girlgoal </item>>
 
         <item name='head_pic'>@drawable/girlsmile </item>>
+
+        <item name='jiayou_pic'>@drawable/jiayou2</item>
+
+        <item name="user1name">"baby_girl"</item>>
+
+        <item name="user2name">"baby_boy"</item>>
+
+        <item name="daystar">"5"</item>>
+
+        <item name="sunstar">"0"</item>>
+
+        <item name="moonstar">"0"</item>>
     </style>
 </resources>
